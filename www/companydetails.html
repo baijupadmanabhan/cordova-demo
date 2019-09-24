@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html><head>
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">  
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+  
+  <script src="js/jquery-1.11.3.min.js"></script>
+  
+  <link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">  
+  <link rel="stylesheet" href="js/company.css">  
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>  
+  <script src="js/intelxdk.js"></script>  
+  <script src="js/xhr.js"></script>
+</head>
+<body>
+<div id="detailsPage" data-role="page" data-add-back-btn="true" style="margin-bottom: -10px;">
+<div data-role="header" data-add-back-btn="true" data-position="fixed">
+<h1>Company Details</h1>
+</div>
+<div data-role="content">
+<table align="center" border="0" width="200">
+  <tbody>
+    <tr>
+        <td ><img id="companylogo" style="display:table-cell;width:110px;height:115px;padding:10px;"/></td>
+      <td style="width:700" nowrap>
+      
+          <br><br><strong class="book-title" id="companyName" with="300"></strong>
+        <span class="text-offset" id="companyTic"></span><br>
+          <span class="text-offset" id="companySector"></span><br>
+           <span class="text-offset1" id="companyRank" style="background-color: #F39C12"></span>
+             
+      </td>
+                  
+        </tr>
+  </tbody>
+</table>
+<br>
+<div class="ui-grid-b" style="border-bottom: thin none; margin: 0px;">
+<div class="ui-block-a" style="padding: 0px; margin-bottom: -10px;"> <a href="#" class="ui-btn ui-corner-all ui-shadow" syle="width:50px">Profile</a><br>
+</div>
+<div class="ui-block-b" style="padding: 0px; margin-bottom: -10px;"> <a href="#" class="ui-btn ui-corner-all ui-shadow" syle="width:50px">Hi-Lites</a><br>
+</div>
+<div class="ui-block-c" style="padding: 0px; margin-bottom: -40px;"> <a href="#" class="ui-btn ui-corner-all ui-shadow" syle="width:50px">News</a><br>
+</div>
+</div>
+</div>
+<div id="revenueMatrix">
+<p style="line-height: 2%; padding: 0px 2px;"><strong>Revenue Matrix</strong></p>
+    
+    <table id="TotalRevenue" class="features-table-TotRevenue">
+  <thead> <tr>
+    <td>
+      <span class="text-offset-totRevenue" id="TotalRevenueSpan">$</span><br>
+          <span class="text-offset">TOTAL SPEND</span>
+      </td>
+    <td>
+        <center><span id="TotalRevenueArrow"></span></center>
+        <br>
+          <span class="text-offset" id="TotalRevenuePerc"></span>
+      
+      </td>
+  </tr>
+  </thead>
+</table>
+    
+    <br>
+    
+<table id="revenueTable" class="features-table">
+  <thead> <tr>
+    <td><br>
+    </td>
+    <td>Current Year</td>
+    <td>Previous Year</td>
+  </tr>
+  </thead> <tbody>    
+  </tbody>
+</table>
+
+</div>
+<br>
+<div class="productRecm" >
+<p style="line-height: 2%; padding: 0px 2px;"><strong>Product Recommendations</strong></p>
+<table id="prdtRcmd" class="features-table2">
+  <thead> <tr>
+    <td>Business Unit</td>
+    <td>Product Name</td>
+  </tr>
+  </thead> <tbody>
+  </tbody>
+</table>
+</div>
+<br>
+<div class="topProducts">
+<p style="line-height: 2%; padding: 0px 2px;"><strong>Top Products</strong></p>
+<table id="topPrdt" class="features-table3">
+  <thead> <tr>
+    <td>Business Unit</td>
+    <td>Rank</td>
+    <td><br>
+    </td>
+  </tr>
+  </thead> <tbody>
+  </tbody>
+</table>
+</div>
+<br>
+<div class="companyWeb">
+<p style="strong">Website :</p><p id="companyWebP"></p>
+</div>
+</div>
+
+</body></html>
